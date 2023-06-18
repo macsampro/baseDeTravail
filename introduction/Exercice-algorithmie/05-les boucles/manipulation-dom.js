@@ -19,3 +19,5 @@ let input2 = document.getElementById("input2")
 let p2 = document.getElementById("p2")
 
 input2.addEventListener( "change",(event) =>{p2.innerHTML = input2.value + p2.innerHTML} )
+
+

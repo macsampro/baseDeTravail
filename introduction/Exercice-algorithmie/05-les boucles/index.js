@@ -22,3 +22,4 @@ while (depot<seuil ){
 }
 console.log(depot);
 console.log(anee);
+
