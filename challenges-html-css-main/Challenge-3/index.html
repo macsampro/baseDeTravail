@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3 - HTML & CSS</title>
 
-  <title>Challenge 3 - HTML & CSS </title>
+    <!-- ce css permet simplement de mettre en page la présentation -->
+    <link rel="stylesheet" href="../css/presentation.css" />
 
-  <!-- ce css permet simplement de mettre en page la présentation -->
-  <link rel="stylesheet" href="../css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <section class="learn">
+      <!-- Début de la zone d'entrainement -->
 
-<body>
-  <section class="learn">
-    <!-- Début de la zone d'entrainement -->
-
-    <!-------------------------------------------------
+      <!-------------------------------------------------
         Focus sur l'imbrication d'éléments <ul> et <li> 
     --------------------------------------------------->
+      <div class="card">
+        
+        <h1>Menu de l'appli</h1>
 
-    <h1>Menu de l'appli</h1>
+        <ul class="lst">
+          <li>Tableau de bord</li>
+          <li>Pages</li>
+          <li>Posts</li>
+          <li>Ressources
+            <div class="souslst01">
+              <ul class="sousLst">
+                <li>Binliothèque</li>
+                <li>Ajout de ressources</li>
+                <li>Statistics</li>
+              </ul>
+            </div>
+          </li>
+          <li>Utilisateurs</li>
+          <li>Paramètres</li>
+        </ul>
 
-    <!-- Fin de la zone d'entrainement -->
-  </section>
+      </div>
 
-  <section class="preview" data-content="challenge 3">
-    <img width="444px" src="img/objectif/menu.png" alt="menu" />
-  </section>
-</body>
+      <!-- Fin de la zone d'entrainement -->
+    </section>
 
+    <section class="preview" data-content="challenge 3">
+      <img width="444px" src="img/objectif/menu.png" alt="menu" />
+    </section>
+  </body>
 </html>
