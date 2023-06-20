@@ -32,7 +32,7 @@ function FizzBuzz() {
     }
   }
 }
-console.log(+ FizzBuzz());
+console.log(+FizzBuzz());
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 💻 EXERCICE 03
@@ -50,7 +50,7 @@ function siecle(annee) {
   let group = Math.floor(annee / 100) + 1;
   return group;
 }
-console.log("vous etes bien au " + siecle(1400)+ " siecle");
+console.log("vous etes bien au " + siecle(1400) + " siecle");
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 💻 EXERCICE 04
@@ -78,7 +78,7 @@ function wordScore(inputString) {
   return resultat;
 }
 
-console.log( "le scor de vaux letre est " + wordScore("abcde"));
+console.log("le scor de vaux letre est " + wordScore("abcde"));
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 💻 EXERCICE 05 // Fibonacci 01
@@ -125,7 +125,7 @@ function sumFibonacci(n) {
   return nPaire;
 }
 
-console.log( "resultat de fibonacci exercice 02 = " +sumFibonacci(3));
+console.log("resultat de fibonacci exercice 02 = " + sumFibonacci(3));
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -155,25 +155,47 @@ function SumOddFiboNumber(n) {
   return nImperTrouver;
 }
 
-console.log("resultat de fibonacci exercice 03 = " +SumOddFiboNumber(10));
+console.log("resultat de fibonacci exercice 03 = " + SumOddFiboNumber(10));
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // 💻 EXERCICE 08 // nombres heureux :
 //Ecrire une fonction qui va retourner les 5 premiers nombres heureux
 
+// function HappyNumber(n) {
+//   let numbers = n.toString().split("");
+
+//   for (let i = 0; i < numbers.length; i++){
+//     numbers[i] = Math.pow(numbers[i], 2);
+//   }
+
+//   let sum = 0;
+//   for (let i = 0; i < numbers.length; i++){
+//     sum += numbers[i];
+//   }
+//   return sum;
+// }
+
+// console.log(HappyNumber(19)); // Retourne 82
+
 function HappyNumber(n) {
-  let numbers = n.toString().split("");
-  
-  for (let i = 0; i < numbers.length; i++){
-    numbers[i] = Math.pow(numbers[i], 2);
+  let nombre = n.toString().split("");
+  let result = 0;
+
+  if (result == n) {
+    console.log(result +"n'est pas un happy number, nombre identique");
+
+  }else if(!result == 1){
+    for (let i = 0; i < nombre.length; i++) {
+      nombre[i] = Math.pow(nombre[i], 2);
+      result += nombre[i];
+    }
+    console.log(n + " est un happy number");
+  }else{
+    console.log(n +"n'est pas un happy number");
   }
 
-  let sum = 0;
-  for (let i = 0; i < numbers.length; i++){
-    sum += numbers[i];
-  }
-  return sum;
 }
 
-console.log(HappyNumber(19)); // Retourne 82
+console.log(HappyNumber(50));
+console.log(typeof result);

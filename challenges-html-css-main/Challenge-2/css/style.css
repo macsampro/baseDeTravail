@@ -1,0 +1,114 @@
+:root {
+  --background-card: #fff;
+  --box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  --color-text: #172533;
+  --color-text-soft: #626e76;
+  --color-accent: #c0477a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+
+.learn {
+  font-family: "Poppins", sans-serif;
+  margin: 0px,0px,0px,0px;
+  padding: 0px;
+  width: 350px;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+h1 {
+  color: var(--color-text);
+  align-items: center;
+  font-size: 25px;
+  font-weight: 999;
+  margin-top: 0px;
+  border: 2px solid red;
+}
+
+.imgGateaux {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* margin-bottom: 10px; */
+}
+p{
+  color: var(--color-text-soft);
+}
+h2{
+  color: var(--color-text);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.blockText{
+  margin: 0px,0px,0px,0px;
+}
+.blockText, p{
+font-size: 14px;
+color: var(--color-text-soft);
+}
+
+
+
+
+
+.ingredients {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.etapes {
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+.etapes h2{
+  margin-left: 40px;
+}
+
+.listeEtape {
+color: var(--color-text);
+font-weight: 550;
+border: 2px solid red;
+}
+
+.button{
+  margin: 0px,0px,0px,0px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 3px solid var(--color-accent);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: 5px ;
+}
+

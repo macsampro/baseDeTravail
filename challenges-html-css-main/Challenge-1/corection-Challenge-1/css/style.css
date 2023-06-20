@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typographie */
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.card p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #3d4a56;
+}
+
+.card span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card a {
+  color: #f26022;
+  text-decoration: none;
+}
+
+/* Règles réutilisables */
+
+.learn {
+  background-color: #f7f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 29px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem;
+}
+
+hr {
+  opacity: 0.2;
+  margin: 1.5rem 0;
+}
+
+/* Règles personnalisées, spécifique */
