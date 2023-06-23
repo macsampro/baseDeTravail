@@ -16,3 +16,8 @@ function afficherHeure() {
     
 }
 setInterval(afficherHeure, 1000);
+
+
+
+
+
